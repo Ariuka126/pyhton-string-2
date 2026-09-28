@@ -29,8 +29,14 @@ return initials
 
 # Exercise 4
 def extract_year(text):
-    # Write your code here
-    pass
+found_year = False
+
+for word in text.split():
+    clean_word = word.strip("!.,?")
+    if len(clean_word) == 4 and clean_word.isdigit():
+        found_year = clean_word
+        break
+return found_year
 
 # Exercise 5
 def is_palindrome(text):
