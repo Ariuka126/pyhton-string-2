@@ -40,6 +40,13 @@ return found_year
 
 # Exercise 5
 def is_palindrome(text):
-    # Write your code here
-    pass
+    cleaned = ""
+
+    for char in text:
+        if char.isalnum():
+            cleaned += char.lower()
+    if cleaned == cleaned[::-1]:
+        return True
+    else:
+        return False
 
