@@ -2,8 +2,17 @@
 
 # Exercise 1
 def is_valid_email(text):
-    # Write your code here
-    pass
+    hasA=0
+    haso=0
+    for i in text:
+        if i == "@":
+            hasA+=1
+        elif i==".":
+        haso+=1
+    if hasA and haso>0:
+        return "Valid"
+    else:
+        return "Invalid"
 
 # Exercise 2
 def remove_vowels(text):
