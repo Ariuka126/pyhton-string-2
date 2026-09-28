@@ -8,7 +8,7 @@ def is_valid_email(text):
         if i == "@":
             hasA+=1
         elif i==".":
-        haso+=1
+            haso+=1
     if hasA and haso>0:
         return "Valid"
     else:
