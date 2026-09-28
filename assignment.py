@@ -16,10 +16,8 @@ def is_valid_email(text):
 
 # Exercise 2
 def remove_vowels(text):
-    mapping = str.maketrans({"A": "", "E": "", "O": "","I": "","a": "", "e": "", "o": "","i": ""})
-    result = text.translate(mapping)
-    return result
-print(remove_vowels("hello world"))
+    mapping = str.maketrans("", "", "aeiouAEIOU")
+    return text.translate(mapping)
 
 # Exercise 3
 def get_initials(text):
