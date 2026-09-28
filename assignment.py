@@ -25,7 +25,7 @@ def get_initials(name):
     initials = ""
     for word in words:
         initials += word[0].upper() + "."
-return initials
+    return initials
 
 # Exercise 4
 def extract_year(text):
