@@ -20,9 +20,12 @@ def remove_vowels(text):
     return text.translate(mapping)
 
 # Exercise 3
-def get_initials(text):
-    # Write your code here
-    pass
+def get_initials(name):
+    words = name.split()
+    initials = ""
+    for word in words:
+        initials += word[0].upper() + "."
+return initials
 
 # Exercise 4
 def extract_year(text):
